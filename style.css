@@ -123,16 +123,15 @@ code {
     border: 1px solid rgb(88, 123, 155);
     border-radius: 60px;
     margin: 30px auto;
-    padding: 0 10px;
+    padding: 10px;
     background: white;
 }
 
-.light_elem {
+.trafficLight {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: black;  
-    margin: 10px; 
+    background: black;     
 }
 
 #textLink {    

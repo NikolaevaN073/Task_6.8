@@ -1,20 +1,15 @@
-    let i = 2;
-    let color = ['green','yellow','red'];
+let i = 2;
+let color = ['green','yellow','red'];
 
-    document.querySelector('.light_box').addEventListener('click', (event) => {
-        event.target.children[i].style.background = 'black';
-        i = i !== 2 ? ++i : 0;
-        event.target.children[i].style.background = color[i];    
-    })
+const trafficLight = document.querySelectorAll('.trafficLight');
 
+function changeColor () {
+   trafficLight[i].style.background = 'black';
+   
+   i = i !== 2 ? ++i : 0;
+   trafficLight[i].style.background = color[i];  
+}
 
-
-
-
-
-
-
-
-
-
-
+trafficLight.forEach((elem)=>{
+    elem.addEventListener('click', changeColor)
+})
